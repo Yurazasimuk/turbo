@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог | TURBO PARTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo"><i class="fa-solid fa-gauge-high"></i> TURBO<span>PARTS</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html" class="active">Каталог</a></li>
+                <li><a href="service.html">СТО</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="catalog-section">
+        <div class="container catalog-container">
+
+            <aside class="catalog-sidebar">
+                <div class="sidebar-widget">
+                    <h3>Категорії</h3>
+                    <ul class="category-list" id="category-filters">
+                        <li><a href="#" data-filter="all" class="active">Всі запчастини</a></li>
+                        <li><a href="#" data-filter="oils">Мастила</a></li>
+                        <li><a href="#" data-filter="filters">Фільтри</a></li>
+                        <li><a href="#" data-filter="brakes">Гальма</a></li>
+                        <li><a href="#" data-filter="battery">Акумулятори</a></li>
+                        <li><a href="#" data-filter="chassis">Ходова</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Ціна (грн)</h3>
+                    <div class="price-inputs">
+                        <input type="number" id="price-min" placeholder="Від" value="0">
+                        <input type="number" id="price-max" placeholder="До" value="10000">
+                    </div>
+                    <button class="filter-btn">ЗАСТОСУВАТИ</button>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Бренд</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" class="brand-filter" value="motul"> Motul</label>
+                        <label><input type="checkbox" class="brand-filter" value="bosch"> Bosch</label>
+                        <label><input type="checkbox" class="brand-filter" value="brembo"> Brembo</label>
+                        <label><input type="checkbox" class="brand-filter" value="varta"> Varta</label>
+                        <label><input type="checkbox" class="brand-filter" value="kyb"> KYB</label>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="catalog-content">
+                <div class="product-grid-full" id="product-grid">
+
+                    <div class="product-card" data-category="oils" data-brand="motul" data-price="1850" onclick="window.location.href='product.html?id=1'">
+                        <div class="badge">TOP</div>
+                        <div class="product-img">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.9yaTJPpeJRhW6_LCVFwYyQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Motul">
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Мастила</span>
+                            <h4>Motul 8100 X-cess 5W-40 (5L)</h4>
+                            <div class="price-action">
+                                <div class="price">1 850 ₴</div>
+                                <button class="add-btn" onclick="event.stopPropagation(); addToCart('Motul 8100 X-cess 5W-40 (5L)', 1850, 'https://tse4.mm.bing.net/th/id/OIP.9yaTJPpeJRhW6_LCVFwYyQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3')">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="filters" data-brand="bosch" data-price="320" onclick="window.location.href='product.html?id=2'">
+                        <div class="product-img">
+                            <img src="https://www.boschautoparts.com/documents/647135/1488064/PremiumOil3_PDP_Carousel.jpg" alt="Bosch">
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Фільтри</span>
+                            <h4>Bosch Oil Filter P3030</h4>
+                            <div class="price-action">
+                                <div class="price">320 ₴</div>
+                                <button class="add-btn" onclick="event.stopPropagation(); addToCart('Bosch Oil Filter P3030', 320, 'https://www.boschautoparts.com/documents/647135/1488064/PremiumOil3_PDP_Carousel.jpg')">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="brakes" data-brand="brembo" data-price="2100" onclick="window.location.href='product.html?id=3'">
+                        <div class="badge">-15%</div>
+                        <div class="product-img">
+                            <img src="https://media.autodoc.de/360_photos/1661551/h-preview.jpg" alt="Brembo">
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Гальма</span>
+                            <h4>Brembo Brake Pads Set</h4>
+                            <div class="price-action">
+                                <div class="price">2 100 ₴</div>
+                                <button class="add-btn" onclick="event.stopPropagation(); addToCart('Brembo Brake Pads Set', 2100, 'https://media.autodoc.de/360_photos/1661551/h-preview.jpg')">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="battery" data-brand="varta" data-price="3400" onclick="window.location.href='product.html?id=4'">
+                        <div class="product-img">
+                            <img src="https://media.cdn.kaufland.de/product-images/1024x1024/684c036dd21a61218d282252fa702b20.jpg" alt="Varta">
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Акумулятори</span>
+                            <h4>Varta Blue Dynamic D24</h4>
+                            <div class="price-action">
+                                <div class="price">3 400 ₴</div>
+                                <button class="add-btn" onclick="event.stopPropagation(); addToCart('Varta Blue Dynamic D24', 3400, 'https://media.cdn.kaufland.de/product-images/1024x1024/684c036dd21a61218d282252fa702b20.jpg')">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="chassis" data-brand="kyb" data-price="1650" onclick="window.location.href='product.html?id=5'">
+                        <div class="product-img">
+                            <img src="https://images2.exist.ua/media/images/products/2021/01/45__um5kNJs.jpg" alt="KYB">
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Ходова</span>
+                            <h4>Амортизатор KYB Excel-G</h4>
+                            <div class="price-action">
+                                <div class="price">1 650 ₴</div>
+                                <button class="add-btn" onclick="event.stopPropagation(); addToCart('Амортизатор KYB Excel-G', 1650, 'https://images2.exist.ua/media/images/products/2021/01/45__um5kNJs.jpg')">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

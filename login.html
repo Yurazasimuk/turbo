@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід в кабінет | TURBO PARTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo"><i class="fa-solid fa-gauge-high"></i> TURBO<span>PARTS</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="switchTab('login')">Вхід</button>
+                <button class="auth-tab" onclick="switchTab('register')">Реєстрація</button>
+            </div>
+
+            <form id="loginForm" class="auth-form active">
+                <h2>З поверненням!</h2>
+                <input type="email" id="loginEmail" placeholder="Ваш Email" required>
+                <input type="password" id="loginPass" placeholder="Пароль" required>
+                <button type="submit" class="buy-btn">УВІЙТИ</button>
+            </form>
+
+            <form id="registerForm" class="auth-form">
+                <h2>Створення акаунту</h2>
+                <input type="text" id="regName" placeholder="Ваше Ім'я" required>
+                <input type="email" id="regEmail" placeholder="Email" required>
+                <input type="password" id="regPass" placeholder="Пароль" required>
+                <button type="submit" class="buy-btn">ЗАРЕЄСТРУВАТИСЬ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function switchTab(tab) {
+            document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
+
+            if(tab === 'login') {
+                document.querySelectorAll('.auth-tab')[0].classList.add('active');
+                document.getElementById('loginForm').classList.add('active');
+            } else {
+                document.querySelectorAll('.auth-tab')[1].classList.add('active');
+                document.getElementById('registerForm').classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

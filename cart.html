@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик | TURBO PARTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo"><i class="fa-solid fa-gauge-high"></i> TURBO<span>PARTS</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="service.html">СТО</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="cart-section" style="padding: 120px 0; min-height: 60vh;">
+        <div class="container">
+            <h1>Твій кошик</h1>
+
+            <div id="cart-items-container">
+                </div>
+
+            <div id="cart-total-box" style="margin-top: 30px; text-align: right; display: none;">
+                <h2 style="margin-bottom: 20px;">Разом: <span id="final-price" style="color: #ff5722;">0</span> грн</h2>
+
+                <button id="checkout-btn" class="buy-btn" style="padding: 15px 40px; font-size: 1.2rem;">
+                    ОФОРМИТИ ЗАМОВЛЕННЯ
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Оформлення замовлення</h2>
+            <p>Залиште контакти, менеджер уточнить деталі доставки.</p>
+            <form id="orderForm">
+                <input type="text" id="orderName" placeholder="Ваше ім'я" required>
+                <input type="tel" id="orderPhone" placeholder="Номер телефону" required>
+                <button type="submit" class="search-btn full-width">ПІДТВЕРДИТИ ЗАМОВЛЕННЯ</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 TURBO PARTS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

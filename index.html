@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURBO PARTS | Автозапчастини та СТО</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <i class="fa-solid fa-gauge-high"></i> TURBO<span>PARTS</span>
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#products">Товари</a></li>
+                <li><a href="service.html">СТО</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="overlay"></div>
+        <div class="container hero-content hidden">
+            <h1>Знайдемо будь-яку деталь <br><span>за 5 хвилин</span></h1>
+            <p>Професійний підбір запчастин та запис на сервіс</p>
+
+            <div class="search-box">
+                <form id="vinForm">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fa-solid fa-car"></i>
+                            <input type="text" placeholder="Марка авто (напр. BMW X5)" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <input type="tel" placeholder="Ваш телефон" required>
+                        </div>
+                        <button type="submit" class="search-btn">ПІДІБРАТИ <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="hero-features">
+                <span><i class="fa-solid fa-check"></i> TecDoc База</span>
+                <span><i class="fa-solid fa-check"></i> Гарантія</span>
+                <span><i class="fa-solid fa-truck-fast"></i> Доставка</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="catalog" class="section">
+        <div class="container">
+            <h2 class="section-header hidden">Категорії <div class="line"></div></h2>
+            <div class="grid-container">
+                <div class="category-card hidden" onclick="window.location.href='catalog.html'">
+                    <div class="card-icon"><i class="fa-solid fa-oil-can"></i></div>
+                    <h3>Мастила та хімія</h3>
+                    <button class="card-btn">Підібрати</button>
+                </div>
+                <div class="category-card hidden" onclick="window.location.href='catalog.html'">
+                    <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Ходова частина</h3>
+                    <button class="card-btn">Підібрати</button>
+                </div>
+                <div class="category-card hidden" onclick="window.location.href='catalog.html'">
+                    <div class="card-icon"><i class="fa-solid fa-car-battery"></i></div>
+                    <h3>Електрика</h3>
+                    <button class="card-btn">Підібрати</button>
+                </div>
+                <div class="category-card hidden" onclick="window.location.href='catalog.html'">
+                    <div class="card-icon"><i class="fa-solid fa-compact-disc"></i></div>
+                    <h3>Гальма</h3>
+                    <button class="card-btn">Підібрати</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-header hidden">Хіт продажів <div class="line"></div></h2>
+            <div class="grid-container" id="product-list">
+
+                <div class="product-card hidden" onclick="window.location.href='product.html?id=1'">
+                    <div class="badge">TOP</div>
+                    <div class="product-img">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.9yaTJPpeJRhW6_LCVFwYyQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Motul">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Мастила</span>
+                        <h4>Motul 8100 X-cess 5W-40 (5L)</h4>
+                        <div class="price-action">
+                            <div class="price">1 850 ₴</div>
+                            <button class="add-btn" onclick="event.stopPropagation(); addToCart('Motul 8100 X-cess 5W-40 (5L)', 1850, 'https://tse4.mm.bing.net/th/id/OIP.9yaTJPpeJRhW6_LCVFwYyQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3')">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card hidden" onclick="window.location.href='product.html?id=2'">
+                    <div class="product-img">
+                        <img src="https://www.boschautoparts.com/documents/647135/1488064/PremiumOil3_PDP_Carousel.jpg" alt="Bosch">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Фільтри</span>
+                        <h4>Bosch Oil Filter P3030</h4>
+                        <div class="price-action">
+                            <div class="price">320 ₴</div>
+                            <button class="add-btn" onclick="event.stopPropagation(); addToCart('Bosch Oil Filter P3030', 320, 'https://www.boschautoparts.com/documents/647135/1488064/PremiumOil3_PDP_Carousel.jpg')">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card hidden" onclick="window.location.href='product.html?id=3'">
+                    <div class="badge">-15%</div>
+                    <div class="product-img">
+                        <img src="https://media.autodoc.de/360_photos/1661551/h-preview.jpg" alt="Brembo">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Гальма</span>
+                        <h4>Brembo Brake Pads Set</h4>
+                        <div class="price-action">
+                            <div class="price">2 100 ₴</div>
+                            <button class="add-btn" onclick="event.stopPropagation(); addToCart('Brembo Brake Pads Set', 2100, 'https://media.autodoc.de/360_photos/1661551/h-preview.jpg')">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card hidden" onclick="window.location.href='product.html?id=4'">
+                    <div class="product-img">
+                        <img src="https://media.cdn.kaufland.de/product-images/1024x1024/684c036dd21a61218d282252fa702b20.jpg" alt="Varta">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Акумулятори</span>
+                        <h4>Varta Blue Dynamic D24</h4>
+                        <div class="price-action">
+                            <div class="price">3 400 ₴</div>
+                            <button class="add-btn" onclick="event.stopPropagation(); addToCart('Varta Blue Dynamic D24', 3400, 'https://media.cdn.kaufland.de/product-images/1024x1024/684c036dd21a61218d282252fa702b20.jpg')">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="service-promo" class="section" style="background-color: #0f0f0f; padding: 100px 0;">
+        <div class="container">
+            <div class="service-flex" style="align-items: center;">
+
+                <div class="service-text hidden" style="flex: 1;">
+                    <h2 style="font-size: 3rem; font-weight: 900; color: #fff; line-height: 1.1; margin-bottom: 20px; text-transform: uppercase;">
+                        Професійний <br> <span style="color: #ff5722;">Автосервіс</span>
+                    </h2>
+
+                    <p style="color: #888; margin-bottom: 30px; font-size: 1rem; line-height: 1.6; max-width: 500px;">
+                        Не тільки продаємо, а й встановлюємо. Наші майстри мають досвід роботи понад 10 років.
+                        Гарантія на запчастини зберігається при встановленні на нашому СТО.
+                    </p>
+
+                    <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+                        <li style="margin-bottom: 15px; font-size: 1.1rem; color: #ccc; display: flex; align-items: center;">
+                            <i class="fa-solid fa-check" style="color: #ff5722; margin-right: 15px;"></i> Комп'ютерна діагностика
+                        </li>
+                        <li style="margin-bottom: 15px; font-size: 1.1rem; color: #ccc; display: flex; align-items: center;">
+                            <i class="fa-solid fa-check" style="color: #ff5722; margin-right: 15px;"></i> Ремонт ходової
+                        </li>
+                        <li style="margin-bottom: 15px; font-size: 1.1rem; color: #ccc; display: flex; align-items: center;">
+                            <i class="fa-solid fa-check" style="color: #ff5722; margin-right: 15px;"></i> Планове ТО
+                        </li>
+                    </ul>
+
+                    <div style="display: flex; gap: 20px;">
+                        <a href="service.html" class="search-btn" style="text-decoration: none; display: inline-block; padding: 15px 30px; border-radius: 4px;">ПРАЙС-ЛИСТ</a>
+
+                        <button class="open-modal" style="background: #fff; color: #000; border: none; padding: 15px 30px; font-weight: 800; border-radius: 4px; cursor: pointer; text-transform: uppercase; transition: 0.3s;">
+                            ЗАПИСАТИСЬ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-img hidden" style="flex: 1;">
+                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=800&auto=format&fit=crop"
+                         alt="СТО"
+                         style="width: 100%; border-radius: 8px; opacity: 0.9; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section dark-bg">
+        <div class="container contact-wrapper">
+            <div class="contact-info hidden">
+                <h2>Контакти</h2>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Адреса:</h3>
+                        <p>м. Івано-Франківськ, вул. Незалежності, 40</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Телефон:</h3>
+                        <p><a href="tel:0970000000" style="color: #ccc; text-decoration: none;">(097) 000-00-00</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h3>Графік роботи:</h3>
+                        <p>Пн-Сб: 09:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-box hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166063.4542718764!2d24.56499889708918!3d48.91163459146824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16c34b0381d%3A0xd6d32394e57e4675!2z0IbQstCw0L3Qvi3Qp9GA0LDQvdC60ZbQstGB0YzQuiwg0IbQstCw0L3Qvi3Qp9GA0LDQvdC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3NjAwMA!5e0!3m2!1suk!2sua!4v1708450000000!5m2!1suk!2sua"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 TURBO PARTS.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Залиште заявку</h2>
+            <p>Передзвонимо за 5 хвилин!</p>
+            <form id="modalForm">
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="tel" placeholder="Номер телефону" required>
+                <button type="submit" class="search-btn full-width">ВІДПРАВИТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

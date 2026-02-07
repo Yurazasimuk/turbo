@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги СТО | TURBO PARTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <i class="fa-solid fa-gauge-high"></i> TURBO<span>PARTS</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="service.html" class="active">СТО</a></li>
+                <li><a href="index.html#contacts">Контакти</a></li>
+                <li><button class="nav-btn open-modal">Записатись</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="height: 60vh; background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1920&auto=format&fit=crop');">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">Професійний сервіс</h1>
+            <p class="fade-in-up delay-1">Діагностика та ремонт будь-якої складності</p>
+        </div>
+    </section>
+
+    <section class="section dark-bg">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box hidden">
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Гарантія якості</h3>
+                    <p>Даємо гарантію на запчастини та виконані роботи до 12 місяців.</p>
+                </div>
+                <div class="feature-box hidden">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <h3>Досвідчені майстри</h3>
+                    <p>Команда професіоналів з досвідом роботи від 10 років.</p>
+                </div>
+                <div class="feature-box hidden">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Сучасне обладнання</h3>
+                    <p>Використовуємо новітні сканери Bosch та професійний інструмент.</p>
+                </div>
+                <div class="feature-box hidden">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h3>Чесні ціни</h3>
+                    <p>Ніяких прихованих платежів. Узгоджуємо вартість до початку робіт.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-header hidden">Прайс-лист послуг <div class="line"></div></h2>
+
+            <div class="accordion-container">
+
+                <div class="accordion-item hidden">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-oil-can"></i> Технічне обслуговування</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="price-row"><span>Заміна мастила та фільтрів</span> <strong>400 грн</strong></div>
+                        <div class="price-row"><span>Заміна повітряного фільтра</span> <strong>100 грн</strong></div>
+                        <div class="price-row"><span>Заміна паливного фільтра</span> <strong>300 грн</strong></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item hidden">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-gears"></i> Ходова частина</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="price-row"><span>Діагностика ходової</span> <strong>300 грн</strong></div>
+                        <div class="price-row"><span>Заміна важеля підвіски</span> <strong>600 грн</strong></div>
+                        <div class="price-row"><span>Заміна амортизатора (1 шт)</span> <strong>800 грн</strong></div>
+                        <div class="price-row"><span>Розвал-сходження</span> <strong>500 грн</strong></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item hidden">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-laptop-medical"></i> Комп'ютерна діагностика</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="price-row"><span>Повне сканування помилок</span> <strong>250 грн</strong></div>
+                        <div class="price-row"><span>Адаптація блоків</span> <strong>500 грн</strong></div>
+                        <div class="price-row"><span>Перевірка пробігу</span> <strong>400 грн</strong></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item hidden">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-snowflake"></i> Обслуговування кондиціонера</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="price-row"><span>Заправка кондиціонера</span> <strong>від 800 грн</strong></div>
+                        <div class="price-row"><span>Дезінфекція системи</span> <strong>400 грн</strong></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-bg">
+        <div class="container">
+            <h2 class="section-header hidden">Як ми працюємо <div class="line"></div></h2>
+            <div class="process-steps">
+                <div class="step hidden">
+                    <div class="step-num">01</div>
+                    <h4>Запис</h4>
+                    <p>Ви залишаєте заявку на сайті або телефонуєте нам.</p>
+                </div>
+                <div class="step hidden">
+                    <div class="step-num">02</div>
+                    <h4>Діагностика</h4>
+                    <p>Майстер оглядає авто та формує точний кошторис.</p>
+                </div>
+                <div class="step hidden">
+                    <div class="step-num">03</div>
+                    <h4>Ремонт</h4>
+                    <p>Виконуємо роботи, використовуючи якісні запчастини.</p>
+                </div>
+                <div class="step hidden">
+                    <div class="step-num">04</div>
+                    <h4>Видача</h4>
+                    <p>Ви отримуєте справне авто та гарантійний талон.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container form-section-wrapper hidden">
+            <div class="form-content">
+                <h2>Записатись на сервіс</h2>
+                <p>Заповніть форму, і ми зв'яжемось з вами для підтвердження часу.</p>
+                <form id="servicePageForm" class="styled-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше ім'я" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Номер телефону" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="" disabled selected>Оберіть послугу</option>
+                            <option>ТО (Заміна мастила)</option>
+                            <option>Діагностика ходової</option>
+                            <option>Ремонт двигуна</option>
+                            <option>Інше</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-btn full-width">ВІДПРАВИТИ ЗАЯВКУ</button>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1000&auto=format&fit=crop" alt="Repair">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 TURBO PARTS.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Запис на сервіс</h2>
+            <form id="modalForm">
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="tel" placeholder="Номер телефону" required>
+                <button type="submit" class="search-btn full-width">ВІДПРАВИТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

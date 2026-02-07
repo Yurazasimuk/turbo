@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар | TURBO PARTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <i class="fa-solid fa-gauge-high"></i> TURBO<span>PARTS</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="service.html">СТО</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumbs-section">
+        <div class="container">
+            <a href="index.html">Головна</a> <i class="fa-solid fa-chevron-right"></i>
+            <a href="catalog.html">Каталог</a> <i class="fa-solid fa-chevron-right"></i>
+            <span id="breadcrumb-title">Товар</span>
+        </div>
+    </div>
+
+    <section class="section product-details">
+        <div class="container product-wrapper">
+
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainImg" src="" alt="Product Image">
+                </div>
+            </div>
+
+            <div class="product-main-info">
+                <span class="stock-status in-stock"><i class="fa-solid fa-check"></i> Є в наявності</span>
+
+                <h1 id="p-title">Завантаження товару...</h1>
+
+                <div class="sku">Артикул: <span id="p-sku">TP-0000</span></div>
+
+                <div class="rating-box">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <span>(Відгуки)</span>
+                </div>
+
+                <div class="price-box">
+                    <div class="current-price"><span id="p-price">0</span> <span>грн</span></div>
+                </div>
+
+                <p class="short-desc">
+                    Високоякісна запчастина для вашого автомобіля. Гарантія якості та відповідності стандартам виробника.
+                </p>
+
+                <div class="actions">
+                    <input type="number" value="1" min="1" max="10">
+                    <button class="buy-btn">КУПИТИ</button>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="d-item">
+                        <div class="icon-box"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div>
+                            <strong>Нова Пошта</strong>
+                            <p>Відправка сьогодні</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 TURBO PARTS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
